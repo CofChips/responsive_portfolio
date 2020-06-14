@@ -13,81 +13,59 @@
         font-size: 30px;
       }
     </style>
-    <title>Hello, world!</title>
+    <title>Christopher Lee - Web Dev Portfolio</title>
   </head>
   <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #e3f2fd;">
-      <a class="navbar-brand" href="#">Christopher Lee</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
-
-    <!-- <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand">Christopher Lee</a>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </nav> -->
-
-    <nav class="navbar navbar-expand flex-column flex-sm-row navbar-dark p-0 border-bottom bg-white"> 
-      <a class="navbar-brand bg-info mx-0 ml-sm-3 ml-md-5 p-4 font-weight-bold d-none d-sm-block h-100" style="font-family: 'Times New Roman', Times, serif;font-size: 30px;">Christopher Lee</a>
-      <div class="bg-info d-block d-sm-none p-4 font-weight-bold m-0" style="width:100%">
+   
+<!-- responsive navbar -->
+    <nav class="navbar navbar-expand flex-column flex-md-row navbar-dark p-0 border-bottom bg-white bd-navbar"> 
+      <!-- existing brand component with responsive margin and hides on xs -->
+      <a class="navbar-brand bg-info p-4 font-weight-bold d-none d-md-block h-100 transition-width" style="margin-left:3%;font-family: 'Times New Roman', Times, serif;font-size: 30px;">Christopher Lee</a>
+      <!-- appears on xs with background that fills 100% width -->
+      <div class="bg-info d-block d-md-none p-4 font-weight-bold m-0" style="width:100%">
         <p class="text-center text-white m-0" style="font-family: 'Times New Roman', Times, serif;font-size: 30px;">Christopher Lee</p>
       </div>
-      <div class="navbar-nav-scroll my-3 ml-sm-auto mr-0 mr-sm-3 mr-md-5">
+      <!-- nav links -->
+      <div class="navbar-nav-scroll my-3 ml-md-auto" style="margin-right:3%">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link text-black-50 border-right py-0 px-2" href="#">About</a>
+          <li class="nav-item">
+            <a class="nav-link text-black-50 border-right py-0 px-4" href="index.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black-50 border-right py-0 px-2" href="#">Portfolio</a>
+            <a class="nav-link text-black-50 border-right py-0 px-4" href="portfolio.html">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black-50 py-0 px-2" href="#">Contact</a>
+            <a class="nav-link text-black-50 py-0 px-4" href="contact.html">Contact</a>
         </ul>
       </div>
     </nav>
 
-    
-
-    <!-- <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand navbar-dark bg-dark">Christopher Lee</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
+    <div class="container-fluid no-gutters border-top mr-0 p-0">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <div class="card" style="width: 48rem;">
+            <div class="card-body">
+              <h1 class="card-title">About Me</h1>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div> -->
+          <div class="jumbotron jumbotron-fluid bg-white border py-2 px-1 my-5 mr-0 mr-md-3 mr-lg-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="display-5 font-weight-bold border-bottom" style="font-family:'Times New Roman', Times, serif">About Me</h1>
+                </div>
+              </div>
+             
+              <p class="lead"><img src= "profile.jpeg" alt="placeholder" class="img-fluid float-sm-left mr-3 mb-2" style="max-width:446px">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav> -->
+    </div>
 
 
 
