@@ -13,9 +13,9 @@
         font-size: 30px;
       }
       body {
-        background-image: url(background-1921589_1920.jpg);
+        /* background-image: url(background-1921589_1920.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat; */
           /* Margin bottom by footer height */
         margin-bottom: 60px;
       }
@@ -44,9 +44,9 @@
 <!-- responsive navbar -->
     <nav class="navbar navbar-expand flex-column flex-md-row navbar-dark p-0 border-bottom bg-white bd-navbar overflow-hidden"> 
       <!-- existing brand component with responsive margin and hides on xs -->
-      <a class="navbar-brand bg-info p-4 font-weight-bold d-none d-md-block h-100 transition-width" style="margin-left:3%;font-family: 'Times New Roman', Times, serif;font-size: 30px;">Christopher Lee</a>
+      <a class="navbar-brand p-4 font-weight-bold d-none d-md-block h-100" style="margin-left:3%;font-family: 'Times New Roman', Times, serif;font-size: 30px; background-color:#59AAA5">Christopher Lee</a>
       <!-- appears on xs with background that fills 100% width -->
-      <div class="bg-info d-block d-md-none p-4 font-weight-bold m-0" style="width:100%">
+      <div class="d-block d-md-none p-4 font-weight-bold m-0" style="width:100%; background-color:#59AAA5">
         <p class="text-center text-white m-0" style="font-family: 'Times New Roman', Times, serif;font-size: 30px;">Christopher Lee</p>
       </div>
       <!-- nav links -->
@@ -64,26 +64,36 @@
       </div>
     </nav>
 
-    <div class="container-fluid no-gutters border-top mr-0 p-0 overflow-hidden">
+    <div class="container-fluid no-gutters border-top mr-0 p-0 overflow-hidden bg-light">
       <div class="row m-0">
         <div class="col-md-12 p-0">
           <div class="jumbotron bg-white border py-2 px-1 my-5" style="max-width: 725px;margin: 0 3%">
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  <h2 class="display-5 font-weight-bold border-bottom text-info" style="font-family:'Times New Roman', Times, serif">About Me</h2>
+                  <h2 class="display-5 font-weight-bold border-bottom" style="color: #59AAA5; font-family:'Times New Roman', Times, serif">About Me</h2>
                 </div>
               </div>
               <div class="row m-0">
-                <div class="col-md-6 p-4">
-                  <div class="thumbnail">
-                    <img src="profile.jpeg" alt="profile" class="mx-auto" style="max-width: 100%;">
+                <div class="col-md-12 py-2 px-0">
+                  
+                  <div class="d-block d-md-none m-0">
+                    <img src= "profile.jpeg" alt="profile" class="img-fluid mr-3 mb-2" style="width:500px">
                   </div>
-                </div>
-                <div class="col-md-6 p-4" style="max-height:200px">
-                  <p class="lead">        
-                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                  
+                    <div class="d-none d-md-block">
+                      <img src= "profile.jpeg" alt="profile" class="img-fluid float-sm-left mr-3 mb-2" style="width:300px">
+                    </div>
+                  <p>
+                    I am a marketer and aspiring full-stack developer based in San Francisco, California. Born and raised in the East Bay, I consider myself a Bay Area native despite only recently returning to the Bay after 20 years away from home.
                   </p>
+                  <p>
+                    I have a BA in Chinese Language and Literature from UC Irvine and an MBA from The Hong Kong University of Science and Technology (HKUST). Upon receiving my MBA, I was recruited by AXA, a French multi-national insurance company, where I held numerous management positions across various functions over the past decade.  Most recently, I was the Head of Marketing for AXA in Indonesia.
+                  </p>
+                  <p>
+                    In a past life (i.e. prior to fatherhood), I was an avid traveler and beach connoisseur.  My three favorite beaches, in no particular order, are Whitehaven Beach on Whitsunday Island, Australia, Furuzamami Beach on Zamami Island, Okinawa, and Phra Nang Beach in Krabi, Thailand.  
+                  </p>
+                
                 </div>
               </div>
               
@@ -93,7 +103,7 @@
         </div>
         </div>
     </div>
-
+    <div class="container-fluid no-gutters mr-0 pt-1 overflow-hidden" style="background-color: #59AAA5;"></div>
     <footer class="footer">
       <div class="container-fluid text-center text-white bg-secondary border-top border-info">
         &copy;Copyright
