@@ -10,15 +10,7 @@
     <style>
 
       body {
-        /* background-image: url(background-1921589_1920.jpg);
-        background-size: cover;
-        background-repeat: no-repeat; */
-          /* Margin bottom by footer height */
         margin-bottom: 60px;
-      }
-
-      li {
-        font-size: small;
       }
 
       html {
@@ -36,13 +28,13 @@
     </style>
     <title>Christopher Lee - About</title>
   </head>
-  <body>
+  <body class="bg-light">
    
 <!-- responsive navbar -->
     <nav class="navbar navbar-expand flex-column flex-md-row navbar-dark p-0 border-bottom bg-white bd-navbar overflow-hidden"> 
-      <!-- existing brand component with responsive margin and hides on xs -->
+      <!-- existing brand component with responsive margin and hides on smaller sizes -->
       <a class="navbar-brand p-4 font-weight-bold d-none d-md-block h-100" style="margin-left:3%;font-family: 'Times New Roman', Times, serif;font-size: 30px; background-color:#59AAA5">Christopher Lee</a>
-      <!-- appears on xs with background that fills 100% width -->
+      <!-- appears on smaller sizes with background that fills 100% width -->
       <div class="d-block d-md-none p-4 font-weight-bold m-0" style="width:100%; background-color:#59AAA5">
         <p class="text-center text-white m-0" style="font-family: 'Times New Roman', Times, serif;font-size: 30px;">Christopher Lee</p>
       </div>
@@ -50,34 +42,37 @@
       <div class="navbar-nav-scroll my-3 ml-md-auto" style="margin-right:3%">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link text-black-50 border-right py-0 px-3" href="index.html">About</a>
+            <a class="nav-link text-black-50 border-right py-0 px-3" href="index.html"><small>About</small></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black-50 border-right py-0 px-3" href="portfolio.html">Portfolio</a>
+            <a class="nav-link text-black-50 border-right py-0 px-3" href="portfolio.html"><small>Portfolio</small></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black-50 py-0 pl-3" href="contact.html">Contact</a>
+            <a class="nav-link text-black-50 py-0 pl-3" href="contact.html"><small>Contact</small></a>
         </ul>
       </div>
     </nav>
-
-    <div class="container-fluid no-gutters border-top mr-0 p-0 overflow-hidden bg-light">
+  <!-- main body of content -->
+    <main class="container-fluid no-gutters border-top mr-0 p-0 overflow-hidden bg-light">
       <div class="row m-0">
         <div class="col-md-12 p-0">
-          <div class="jumbotron bg-white border py-2 px-1 my-5" style="max-width: 725px;margin: 0 3%">
+          <section class="jumbotron bg-white border py-2 px-1 my-5" style="max-width: 725px;margin: 0 3%">
             <div class="container">
+              <!-- sub-row -->
               <div class="row">
-                <div class="col-12">
+                <!-- header -->
+                <header class="col-12">
                   <h2 class="display-5 font-weight-bold border-bottom" style="color: #59AAA5; font-family:'Times New Roman', Times, serif">About Me</h2>
-                </div>
+                </header>
               </div>
+              <!-- sub-row -->
               <div class="row m-0">
                 <div class="col-md-12 py-2 px-0">
-                  
+                  <!-- only appears on smaller sizes -->
                   <div class="d-block d-md-none m-0">
                     <img src= "profile.jpeg" alt="profile" class="img-fluid mr-3 mb-2" style="width:500px">
                   </div>
-                  
+                  <!-- only appears on bigger sizes -->
                     <div class="d-none d-md-block">
                       <img src= "profile.jpeg" alt="profile" class="img-fluid float-sm-left mr-3 mb-2" style="width:300px">
                     </div>
@@ -96,17 +91,18 @@
               
  
             </div>
-          </div>
+          </section>
         </div>
         </div>
-    </div>
-    <div class="container-fluid no-gutters mr-0 pt-1 overflow-hidden" style="background-color: #59AAA5;"></div>
-    <footer class="footer">
-      <div class="container-fluid text-center text-white bg-secondary border-top border-info">
+      </main>
+    <!-- line above footer -->
+    <!-- footer -->
+      <footer class="footer">
+        <div class="container-fluid no-gutters mr-0 pt-1 overflow-hidden" style="background-color: #59AAA5;"></div>
+        <div class="container-fluid text-center text-white bg-secondary border-top border-info">
         &copy;Copyright
         </div>
-  
-    </footer>
+      </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
